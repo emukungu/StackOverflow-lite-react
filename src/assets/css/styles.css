@@ -11,7 +11,7 @@
 .navbar {
   background-color: turquoise;
   height: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
   padding-top: 10px;
 }
 .signupLinks {
@@ -34,4 +34,29 @@
   margin-left: 10%;
 
 }
+.qnLink {
+  font-size: 20px;
+  float: right;
+  margin-right: 100px;
+}
+.centered {
+ margin-left: 10%;
+ margin-right: 10%;
+}
+.qnHeader {
+  font-size: 20px;
+}
+.question-layout {
+  border: 1px solid lightgrey;
+  line-height: 30px;
+  margin: 30px;
+  width: 60%;
+}
+.qn-title {
+  text-align: center;
 
+}
+.qn-author {
+  text-align: right;
+  margin-left: -20px;
+}

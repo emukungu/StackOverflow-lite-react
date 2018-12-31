@@ -6,7 +6,7 @@ export const LogoutLink = () => {
 };
 export const HomeLink = () => {
   return (
-    <NavLink to={"/home"} className="home">
+    <NavLink to="/home" className="home">
       Home
     </NavLink>
   );
@@ -14,7 +14,7 @@ export const HomeLink = () => {
 export const HomeHeader = () => {
   return (
     <nav className=" navbar">
-      {/* <HomeLink /> */}
+      <HomeLink />
       <NavLink to={"/login"} className="signupLinks login-link">
         Login
       </NavLink>
@@ -30,7 +30,7 @@ export const LoggedInHeader = () => {
   return (
     <nav className=" navbar">
       <HomeLink />
-      <NavLink to={"/home"} className="signupLinks login-link">
+      <NavLink to="/home" className="signupLinks login-link">
         Logout
       </NavLink>
     </nav>

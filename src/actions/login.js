@@ -4,7 +4,7 @@ import { LOGIN } from "../actions/actionTypes";
 export const successfulLogin = res => {
   console.log(res.token);
   localStorage.setItem("token", res.token);
-  window.location.replace("/home");
+  window.location.replace("/questions");
 };
 const LOGIN_URL = "http://localhost:5000/api/v1/auth/login";
 export const loginAction = data => {

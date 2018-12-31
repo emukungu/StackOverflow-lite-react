@@ -312,6 +312,11 @@ ShallowWrapper {
       "children": Array [
         <Route
           component={[Function]}
+          exact={true}
+          path="/"
+        />,
+        <Route
+          component={[Function]}
           path="/signup"
         />,
         <Route
@@ -320,12 +325,25 @@ ShallowWrapper {
         />,
         <Route
           component={[Function]}
-          path="/home"
+          path="/questions"
         />,
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "exact": true,
+          "path": "/",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -356,7 +374,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "component": [Function],
-          "path": "/home",
+          "path": "/questions",
         },
         "ref": null,
         "rendered": null,
@@ -374,6 +392,11 @@ ShallowWrapper {
         "children": Array [
           <Route
             component={[Function]}
+            exact={true}
+            path="/"
+          />,
+          <Route
+            component={[Function]}
             path="/signup"
           />,
           <Route
@@ -382,12 +405,25 @@ ShallowWrapper {
           />,
           <Route
             component={[Function]}
-            path="/home"
+            path="/questions"
           />,
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -418,7 +454,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
-            "path": "/home",
+            "path": "/questions",
           },
           "ref": null,
           "rendered": null,
@@ -518,6 +554,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <HomeLink />,
         <NavLink
           activeClassName="active"
           aria-current="page"
@@ -539,6 +576,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -579,6 +625,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <HomeLink />,
           <NavLink
             activeClassName="active"
             aria-current="page"
@@ -600,6 +647,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
