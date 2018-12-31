@@ -2,20 +2,18 @@
 import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import fetchMock from "fetch-mock";
-import signupAction from "../../src/actions/signup";
-import { SIGN_UP } from "../../src/actions/actionTypes";
-
+import loginAction, { successfulLogin } from "../../src/actions/login";
+import { LOGIN } from "../../src/actions/actionTypes";
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
-const SIGNUP_URL = "http://localhost:5000/api/v1/auth/signup";
+const LOGIN_URL =
+  "http://localhost:5000/api/v1/auth/login";
 
 const data = {
-    username: "mark",
-    email: "mark@gmail.com",
-    password: "password"
-
+  username: "mark",
+  password: "password"
 };
 
 describe(" sigup actions ", () => {
@@ -24,11 +22,11 @@ describe(" sigup actions ", () => {
   });
 
   it("registers a user by call the SignUpAction", () => {
-    fetchMock.post(SIGNUP_URL, data);
+    fetchMock.post(LOGIN_URL, data);
     const store = mockStore();
-    const expectedAction = [{ type: SIGN_UP, payload: data }];
+    const expectedAction = [{ type: LOGIN, payload: data }];
     return store
-      .dispatch(signupAction(data))
+      .dispatch(loginAction(data))
       .then(() => expect(store.getActions()).toEqual(expectedAction));
   });
 
@@ -36,7 +34,12 @@ describe(" sigup actions ", () => {
     fetch.mockReject(new Error());
     const store = mockStore();
 
-    store.dispatch(signupAction(data));
+    store.dispatch(loginAction(data));
     expect(store.getActions()).toEqual([]);
+  });
+
+  it("registration successful", () => {
+    const res = {token:"hello"}
+    successfulLogin(res)
   });
 });

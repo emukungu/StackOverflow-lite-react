@@ -17,38 +17,946 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Switch>
-        <Route
-          component={[Function]}
-          path="/"
-        />
-      </Switch>,
+      "children": Array [
+        <Header />,
+        <Main />,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": <Route
-          component={[Function]}
-          path="/"
-        />,
+        "children": Array [
+          <Header />,
+          <Main />,
+        ],
       },
       "ref": null,
-      "rendered": Object {
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the HomeLink snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomeLink />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "activeClassName": "active",
+      "aria-current": "page",
+      "children": "Home",
+      "className": "home",
+      "to": "/home",
+    },
+    "ref": null,
+    "rendered": "Home",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeClassName": "active",
+        "aria-current": "page",
+        "children": "Home",
+        "className": "home",
+        "to": "/home",
+      },
+      "ref": null,
+      "rendered": "Home",
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the LoggedInHeader snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoggedInHeader />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <HomeLink />,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="signupLinks login-link"
+          to="/home"
+        >
+          Logout
+        </NavLink>,
+      ],
+      "className": " navbar",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Logout",
+          "className": "signupLinks login-link",
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <HomeLink />,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="signupLinks login-link"
+            to="/home"
+          >
+            Logout
+          </NavLink>,
+        ],
+        "className": " navbar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Logout",
+            "className": "signupLinks login-link",
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": [Function],
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the Main snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Main />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Route
+          component={[Function]}
+          path="/signup"
+        />,
+        <Route
+          component={[Function]}
+          path="/login"
+        />,
+        <Route
+          component={[Function]}
+          path="/home"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "component": [Function],
-          "path": "/",
+          "path": "/signup",
         },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/login",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/home",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Route
+            component={[Function]}
+            path="/signup"
+          />,
+          <Route
+            component={[Function]}
+            path="/login"
+          />,
+          <Route
+            component={[Function]}
+            path="/home"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/signup",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/login",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/home",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the header snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {},
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the homeheader snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomeHeader />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="signupLinks login-link"
+          to="/login"
+        >
+          Login
+        </NavLink>,
+        <NavLink
+          activeClassName="active"
+          aria-current="page"
+          className="signupLinks"
+          to="/signup"
+        >
+          Sign Up
+        </NavLink>,
+      ],
+      "className": " navbar",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Login",
+          "className": "signupLinks login-link",
+          "to": "/login",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "aria-current": "page",
+          "children": "Sign Up",
+          "className": "signupLinks",
+          "to": "/signup",
+        },
+        "ref": null,
+        "rendered": "Sign Up",
+        "type": [Function],
+      },
+    ],
+    "type": "nav",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="signupLinks login-link"
+            to="/login"
+          >
+            Login
+          </NavLink>,
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="signupLinks"
+            to="/signup"
+          >
+            Sign Up
+          </NavLink>,
+        ],
+        "className": " navbar",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Login",
+            "className": "signupLinks login-link",
+            "to": "/login",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": "Sign Up",
+            "className": "signupLinks",
+            "to": "/signup",
+          },
+          "ref": null,
+          "rendered": "Sign Up",
+          "type": [Function],
+        },
+      ],
+      "type": "nav",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> tests the login snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LoginComponent />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="row"
+      >
+        <div
+          className=" col-xs-12 col-md-6"
+        >
+          <h1>
+            StackOverflow-Lite
+          </h1>
+          <p>
+            A platform where people can ask questions and provide answers.
+          </p>
+        </div>
+        <div
+          className=" col-xs-12 col-md-6 center-signup"
+        >
+          <h2>
+            LOGIN
+          </h2>
+          <form
+            className="form-boundary"
+          >
+            <Input
+              htmlFor="Username"
+              id="username"
+              innerHTML="Username"
+              name="username"
+              placeholder="Username"
+              type="text"
+            />
+            <Input
+              htmlFor="Password"
+              id="password"
+              innerHTML="Password"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+            <button
+              className="btn btn-default"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>,
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className=" col-xs-12 col-md-6"
+          >
+            <h1>
+              StackOverflow-Lite
+            </h1>
+            <p>
+              A platform where people can ask questions and provide answers.
+            </p>
+          </div>,
+          <div
+            className=" col-xs-12 col-md-6 center-signup"
+          >
+            <h2>
+              LOGIN
+            </h2>
+            <form
+              className="form-boundary"
+            >
+              <Input
+                htmlFor="Username"
+                id="username"
+                innerHTML="Username"
+                name="username"
+                placeholder="Username"
+                type="text"
+              />
+              <Input
+                htmlFor="Password"
+                id="password"
+                innerHTML="Password"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>,
+        ],
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                StackOverflow-Lite
+              </h1>,
+              <p>
+                A platform where people can ask questions and provide answers.
+              </p>,
+            ],
+            "className": " col-xs-12 col-md-6",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "StackOverflow-Lite",
+              },
+              "ref": null,
+              "rendered": "StackOverflow-Lite",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "A platform where people can ask questions and provide answers.",
+              },
+              "ref": null,
+              "rendered": "A platform where people can ask questions and provide answers.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                LOGIN
+              </h2>,
+              <form
+                className="form-boundary"
+              >
+                <Input
+                  htmlFor="Username"
+                  id="username"
+                  innerHTML="Username"
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                />
+                <Input
+                  htmlFor="Password"
+                  id="password"
+                  innerHTML="Password"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+                <button
+                  className="btn btn-default"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>,
+            ],
+            "className": " col-xs-12 col-md-6 center-signup",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "LOGIN",
+              },
+              "ref": null,
+              "rendered": "LOGIN",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Input
+                    htmlFor="Username"
+                    id="username"
+                    innerHTML="Username"
+                    name="username"
+                    placeholder="Username"
+                    type="text"
+                  />,
+                  <Input
+                    htmlFor="Password"
+                    id="password"
+                    innerHTML="Password"
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />,
+                  <button
+                    className="btn btn-default"
+                    type="submit"
+                  >
+                    Submit
+                  </button>,
+                ],
+                "className": "form-boundary",
+                "onSubmit": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": undefined,
+                    "htmlFor": "Username",
+                    "id": "username",
+                    "innerHTML": "Username",
+                    "name": "username",
+                    "placeholder": "Username",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": undefined,
+                    "htmlFor": "Password",
+                    "id": "password",
+                    "innerHTML": "Password",
+                    "name": "password",
+                    "placeholder": "Password",
+                    "type": "password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "className": "btn btn-default",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
     "type": "div",
   },
@@ -58,38 +966,292 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Switch>
-          <Route
-            component={[Function]}
-            path="/"
-          />
-        </Switch>,
+        "children": <div
+          className="row"
+        >
+          <div
+            className=" col-xs-12 col-md-6"
+          >
+            <h1>
+              StackOverflow-Lite
+            </h1>
+            <p>
+              A platform where people can ask questions and provide answers.
+            </p>
+          </div>
+          <div
+            className=" col-xs-12 col-md-6 center-signup"
+          >
+            <h2>
+              LOGIN
+            </h2>
+            <form
+              className="form-boundary"
+            >
+              <Input
+                htmlFor="Username"
+                id="username"
+                innerHTML="Username"
+                name="username"
+                placeholder="Username"
+                type="text"
+              />
+              <Input
+                htmlFor="Password"
+                id="password"
+                innerHTML="Password"
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+              <button
+                className="btn btn-default"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>,
+        "className": "container",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "children": <Route
-            component={[Function]}
-            path="/"
-          />,
+          "children": Array [
+            <div
+              className=" col-xs-12 col-md-6"
+            >
+              <h1>
+                StackOverflow-Lite
+              </h1>
+              <p>
+                A platform where people can ask questions and provide answers.
+              </p>
+            </div>,
+            <div
+              className=" col-xs-12 col-md-6 center-signup"
+            >
+              <h2>
+                LOGIN
+              </h2>
+              <form
+                className="form-boundary"
+              >
+                <Input
+                  htmlFor="Username"
+                  id="username"
+                  innerHTML="Username"
+                  name="username"
+                  placeholder="Username"
+                  type="text"
+                />
+                <Input
+                  htmlFor="Password"
+                  id="password"
+                  innerHTML="Password"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+                <button
+                  className="btn btn-default"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>,
+          ],
+          "className": "row",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "path": "/",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  StackOverflow-Lite
+                </h1>,
+                <p>
+                  A platform where people can ask questions and provide answers.
+                </p>,
+              ],
+              "className": " col-xs-12 col-md-6",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "StackOverflow-Lite",
+                },
+                "ref": null,
+                "rendered": "StackOverflow-Lite",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "A platform where people can ask questions and provide answers.",
+                },
+                "ref": null,
+                "rendered": "A platform where people can ask questions and provide answers.",
+                "type": "p",
+              },
+            ],
+            "type": "div",
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": [Function],
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  LOGIN
+                </h2>,
+                <form
+                  className="form-boundary"
+                >
+                  <Input
+                    htmlFor="Username"
+                    id="username"
+                    innerHTML="Username"
+                    name="username"
+                    placeholder="Username"
+                    type="text"
+                  />
+                  <Input
+                    htmlFor="Password"
+                    id="password"
+                    innerHTML="Password"
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />
+                  <button
+                    className="btn btn-default"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>,
+              ],
+              "className": " col-xs-12 col-md-6 center-signup",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "LOGIN",
+                },
+                "ref": null,
+                "rendered": "LOGIN",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Input
+                      htmlFor="Username"
+                      id="username"
+                      innerHTML="Username"
+                      name="username"
+                      placeholder="Username"
+                      type="text"
+                    />,
+                    <Input
+                      htmlFor="Password"
+                      id="password"
+                      innerHTML="Password"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
+                    />,
+                    <button
+                      className="btn btn-default"
+                      type="submit"
+                    >
+                      Submit
+                    </button>,
+                  ],
+                  "className": "form-boundary",
+                  "onSubmit": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": undefined,
+                      "htmlFor": "Username",
+                      "id": "username",
+                      "innerHTML": "Username",
+                      "name": "username",
+                      "placeholder": "Username",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": undefined,
+                      "htmlFor": "Password",
+                      "id": "password",
+                      "innerHTML": "Password",
+                      "name": "password",
+                      "placeholder": "Password",
+                      "type": "password",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Submit",
+                      "className": "btn btn-default",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": "Submit",
+                    "type": "button",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
       "type": "div",
     },
@@ -145,13 +1307,16 @@ ShallowWrapper {
           </p>
         </div>
         <div
-          className=" col-xs-12 col-md-6"
+          className=" col-xs-12 col-md-6 center-signup"
         >
+          <h2>
+            SIGN UP
+          </h2>
           <form>
             <Input
               htmlFor="Username"
               id="username"
-              innerHtml="Username"
+              innerHTML="Username"
               name="username"
               placeholder="Username"
               type="text"
@@ -159,7 +1324,7 @@ ShallowWrapper {
             <Input
               htmlFor="Email"
               id="email"
-              innerHtml="Email"
+              innerHTML="Email"
               name="email"
               placeholder="Email"
               type="email"
@@ -167,7 +1332,7 @@ ShallowWrapper {
             <Input
               htmlFor="Password"
               id="password"
-              innerHtml="Password"
+              innerHTML="Password"
               name="password"
               placeholder="Password"
               type="password"
@@ -201,13 +1366,16 @@ ShallowWrapper {
             </p>
           </div>,
           <div
-            className=" col-xs-12 col-md-6"
+            className=" col-xs-12 col-md-6 center-signup"
           >
+            <h2>
+              SIGN UP
+            </h2>
             <form>
               <Input
                 htmlFor="Username"
                 id="username"
-                innerHtml="Username"
+                innerHTML="Username"
                 name="username"
                 placeholder="Username"
                 type="text"
@@ -215,7 +1383,7 @@ ShallowWrapper {
               <Input
                 htmlFor="Email"
                 id="email"
-                innerHtml="Email"
+                innerHTML="Email"
                 name="email"
                 placeholder="Email"
                 type="email"
@@ -223,7 +1391,7 @@ ShallowWrapper {
               <Input
                 htmlFor="Password"
                 id="password"
-                innerHtml="Password"
+                innerHTML="Password"
                 name="password"
                 placeholder="Password"
                 type="password"
@@ -288,149 +1456,167 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <form>
-              <Input
-                htmlFor="Username"
-                id="username"
-                innerHtml="Username"
-                name="username"
-                placeholder="Username"
-                type="text"
-              />
-              <Input
-                htmlFor="Email"
-                id="email"
-                innerHtml="Email"
-                name="email"
-                placeholder="Email"
-                type="email"
-              />
-              <Input
-                htmlFor="Password"
-                id="password"
-                innerHtml="Password"
-                name="password"
-                placeholder="Password"
-                type="password"
-              />
-              <button
-                className="btn btn-default"
-                type="submit"
-              >
-                 Submit 
-              </button>
-            </form>,
-            "className": " col-xs-12 col-md-6",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
+            "children": Array [
+              <h2>
+                SIGN UP
+              </h2>,
+              <form>
                 <Input
                   htmlFor="Username"
                   id="username"
-                  innerHtml="Username"
+                  innerHTML="Username"
                   name="username"
                   placeholder="Username"
                   type="text"
-                />,
+                />
                 <Input
                   htmlFor="Email"
                   id="email"
-                  innerHtml="Email"
+                  innerHTML="Email"
                   name="email"
                   placeholder="Email"
                   type="email"
-                />,
+                />
                 <Input
                   htmlFor="Password"
                   id="password"
-                  innerHtml="Password"
+                  innerHTML="Password"
                   name="password"
                   placeholder="Password"
                   type="password"
-                />,
+                />
                 <button
                   className="btn btn-default"
                   type="submit"
                 >
                    Submit 
-                </button>,
-              ],
-              "onSubmit": undefined,
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "handleChange": undefined,
-                  "htmlFor": "Username",
-                  "id": "username",
-                  "innerHtml": "Username",
-                  "name": "username",
-                  "placeholder": "Username",
-                  "type": "text",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "handleChange": undefined,
-                  "htmlFor": "Email",
-                  "id": "email",
-                  "innerHtml": "Email",
-                  "name": "email",
-                  "placeholder": "Email",
-                  "type": "email",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "handleChange": undefined,
-                  "htmlFor": "Password",
-                  "id": "password",
-                  "innerHtml": "Password",
-                  "name": "password",
-                  "placeholder": "Password",
-                  "type": "password",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": " Submit ",
-                  "className": "btn btn-default",
-                  "type": "submit",
-                },
-                "ref": null,
-                "rendered": " Submit ",
-                "type": "button",
-              },
+                </button>
+              </form>,
             ],
-            "type": "form",
+            "className": " col-xs-12 col-md-6 center-signup",
           },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SIGN UP",
+              },
+              "ref": null,
+              "rendered": "SIGN UP",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Input
+                    htmlFor="Username"
+                    id="username"
+                    innerHTML="Username"
+                    name="username"
+                    placeholder="Username"
+                    type="text"
+                  />,
+                  <Input
+                    htmlFor="Email"
+                    id="email"
+                    innerHTML="Email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                  />,
+                  <Input
+                    htmlFor="Password"
+                    id="password"
+                    innerHTML="Password"
+                    name="password"
+                    placeholder="Password"
+                    type="password"
+                  />,
+                  <button
+                    className="btn btn-default"
+                    type="submit"
+                  >
+                     Submit 
+                  </button>,
+                ],
+                "onSubmit": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": undefined,
+                    "htmlFor": "Username",
+                    "id": "username",
+                    "innerHTML": "Username",
+                    "name": "username",
+                    "placeholder": "Username",
+                    "type": "text",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": undefined,
+                    "htmlFor": "Email",
+                    "id": "email",
+                    "innerHTML": "Email",
+                    "name": "email",
+                    "placeholder": "Email",
+                    "type": "email",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleChange": undefined,
+                    "htmlFor": "Password",
+                    "id": "password",
+                    "innerHTML": "Password",
+                    "name": "password",
+                    "placeholder": "Password",
+                    "type": "password",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " Submit ",
+                    "className": "btn btn-default",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": " Submit ",
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+          ],
           "type": "div",
         },
       ],
@@ -458,13 +1644,16 @@ ShallowWrapper {
             </p>
           </div>
           <div
-            className=" col-xs-12 col-md-6"
+            className=" col-xs-12 col-md-6 center-signup"
           >
+            <h2>
+              SIGN UP
+            </h2>
             <form>
               <Input
                 htmlFor="Username"
                 id="username"
-                innerHtml="Username"
+                innerHTML="Username"
                 name="username"
                 placeholder="Username"
                 type="text"
@@ -472,7 +1661,7 @@ ShallowWrapper {
               <Input
                 htmlFor="Email"
                 id="email"
-                innerHtml="Email"
+                innerHTML="Email"
                 name="email"
                 placeholder="Email"
                 type="email"
@@ -480,7 +1669,7 @@ ShallowWrapper {
               <Input
                 htmlFor="Password"
                 id="password"
-                innerHtml="Password"
+                innerHTML="Password"
                 name="password"
                 placeholder="Password"
                 type="password"
@@ -514,13 +1703,16 @@ ShallowWrapper {
               </p>
             </div>,
             <div
-              className=" col-xs-12 col-md-6"
+              className=" col-xs-12 col-md-6 center-signup"
             >
+              <h2>
+                SIGN UP
+              </h2>
               <form>
                 <Input
                   htmlFor="Username"
                   id="username"
-                  innerHtml="Username"
+                  innerHTML="Username"
                   name="username"
                   placeholder="Username"
                   type="text"
@@ -528,7 +1720,7 @@ ShallowWrapper {
                 <Input
                   htmlFor="Email"
                   id="email"
-                  innerHtml="Email"
+                  innerHTML="Email"
                   name="email"
                   placeholder="Email"
                   type="email"
@@ -536,7 +1728,7 @@ ShallowWrapper {
                 <Input
                   htmlFor="Password"
                   id="password"
-                  innerHtml="Password"
+                  innerHTML="Password"
                   name="password"
                   placeholder="Password"
                   type="password"
@@ -601,149 +1793,167 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <form>
-                <Input
-                  htmlFor="Username"
-                  id="username"
-                  innerHtml="Username"
-                  name="username"
-                  placeholder="Username"
-                  type="text"
-                />
-                <Input
-                  htmlFor="Email"
-                  id="email"
-                  innerHtml="Email"
-                  name="email"
-                  placeholder="Email"
-                  type="email"
-                />
-                <Input
-                  htmlFor="Password"
-                  id="password"
-                  innerHtml="Password"
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                />
-                <button
-                  className="btn btn-default"
-                  type="submit"
-                >
-                   Submit 
-                </button>
-              </form>,
-              "className": " col-xs-12 col-md-6",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
+              "children": Array [
+                <h2>
+                  SIGN UP
+                </h2>,
+                <form>
                   <Input
                     htmlFor="Username"
                     id="username"
-                    innerHtml="Username"
+                    innerHTML="Username"
                     name="username"
                     placeholder="Username"
                     type="text"
-                  />,
+                  />
                   <Input
                     htmlFor="Email"
                     id="email"
-                    innerHtml="Email"
+                    innerHTML="Email"
                     name="email"
                     placeholder="Email"
                     type="email"
-                  />,
+                  />
                   <Input
                     htmlFor="Password"
                     id="password"
-                    innerHtml="Password"
+                    innerHTML="Password"
                     name="password"
                     placeholder="Password"
                     type="password"
-                  />,
+                  />
                   <button
                     className="btn btn-default"
                     type="submit"
                   >
                      Submit 
-                  </button>,
-                ],
-                "onSubmit": undefined,
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "handleChange": undefined,
-                    "htmlFor": "Username",
-                    "id": "username",
-                    "innerHtml": "Username",
-                    "name": "username",
-                    "placeholder": "Username",
-                    "type": "text",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "handleChange": undefined,
-                    "htmlFor": "Email",
-                    "id": "email",
-                    "innerHtml": "Email",
-                    "name": "email",
-                    "placeholder": "Email",
-                    "type": "email",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "handleChange": undefined,
-                    "htmlFor": "Password",
-                    "id": "password",
-                    "innerHtml": "Password",
-                    "name": "password",
-                    "placeholder": "Password",
-                    "type": "password",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": " Submit ",
-                    "className": "btn btn-default",
-                    "type": "submit",
-                  },
-                  "ref": null,
-                  "rendered": " Submit ",
-                  "type": "button",
-                },
+                  </button>
+                </form>,
               ],
-              "type": "form",
+              "className": " col-xs-12 col-md-6 center-signup",
             },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SIGN UP",
+                },
+                "ref": null,
+                "rendered": "SIGN UP",
+                "type": "h2",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Input
+                      htmlFor="Username"
+                      id="username"
+                      innerHTML="Username"
+                      name="username"
+                      placeholder="Username"
+                      type="text"
+                    />,
+                    <Input
+                      htmlFor="Email"
+                      id="email"
+                      innerHTML="Email"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                    />,
+                    <Input
+                      htmlFor="Password"
+                      id="password"
+                      innerHTML="Password"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
+                    />,
+                    <button
+                      className="btn btn-default"
+                      type="submit"
+                    >
+                       Submit 
+                    </button>,
+                  ],
+                  "onSubmit": undefined,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": undefined,
+                      "htmlFor": "Username",
+                      "id": "username",
+                      "innerHTML": "Username",
+                      "name": "username",
+                      "placeholder": "Username",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": undefined,
+                      "htmlFor": "Email",
+                      "id": "email",
+                      "innerHTML": "Email",
+                      "name": "email",
+                      "placeholder": "Email",
+                      "type": "email",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "handleChange": undefined,
+                      "htmlFor": "Password",
+                      "id": "password",
+                      "innerHTML": "Password",
+                      "name": "password",
+                      "placeholder": "Password",
+                      "type": "password",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": " Submit ",
+                      "className": "btn btn-default",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": " Submit ",
+                    "type": "button",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
             "type": "div",
           },
         ],
