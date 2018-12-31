@@ -28,24 +28,25 @@ export const SignupComponent = props => {
           <h1>StackOverflow-Lite</h1>
           <p>A platform where people can ask questions and provide answers.</p>
         </div>
-        <div className=" col-xs-12 col-md-6">
+        <div className=" col-xs-12 col-md-6 center-signup">
+          <h2>SIGN UP</h2>
           <form onSubmit={handleSubmit}>
             <Input htmlFor={"Username"}
-                  innerHtml={"Username"}
+                  innerHTML={"Username"}
                   name={"username"}
                   id={"username"}
                   handleChange={handleChange}
                   type={"text"}
                   placeholder={"Username"}/>
             <Input htmlFor={"Email"}
-                  innerHtml={"Email"}
+                  innerHTML={"Email"}
                   id={"email"}
                   name={"email"}
                   handleChange={handleChange}
                   type={"email"}
                   placeholder={"Email"}/>
             <Input htmlFor={"Password"}
-                  innerHtml={"Password"}
+                  innerHTML={"Password"}
                   id={"password"}
                   name={"password"}
                   handleChange={handleChange}

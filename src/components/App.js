@@ -1,15 +1,13 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import Header from "./header";
 
-import Signup from "../containers/signup";
-const App = () => {
-    return (
-        <div>
-            <Switch>
-              <Route path = "/" component = { Signup }/>
-            </Switch>
-        </div>
-    );
-};
+
+import Main from "./main";
+const App = () => (
+  <div>
+    <Header />
+    <Main />
+  </div>
+);
 
 export default App;

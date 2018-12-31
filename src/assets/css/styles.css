@@ -1,0 +1,37 @@
+
+.center-login {
+  width: 40%;
+  margin-left: 30%;
+  vertical-align: center;
+}
+.center-signup {
+  width: 40%;
+
+}
+.navbar {
+  background-color: turquoise;
+  height: 20px;
+  margin-bottom: 120px;
+  padding-top: 10px;
+}
+.signupLinks {
+  color: white;
+  text-decoration-line: none;
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
+}
+.login-link {
+  margin-right: 50px;
+}
+/* .form-boundary{
+  border: 1px solid black;
+} */
+.home {
+  color: white;
+  text-decoration-line: none;
+  font-size: 20px;
+  margin-left: 10%;
+
+}
+

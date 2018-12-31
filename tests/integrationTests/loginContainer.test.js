@@ -1,36 +1,32 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import { Signup, mapDispatchToProps } from "../../src/containers/signup";
+import { Login, mapDispatchToProps } from "../../src/containers/login";
 
-describe("user registration", () => {
+describe("user login", () => {
   let wrapper;
   const change = jest.fn();
   const dispatch = jest.fn();
   beforeEach(() => {
-    wrapper = mount(<Signup signup={change} />);
+    wrapper = mount(<Login login={change} />);
   });
   it("should call the mock change function", () => {
     wrapper.find("form").simulate("submit", {
-      preventDefault() {}
+      preventDefault() { }
     });
     expect(change.mock.calls.length).toBe(1);
   });
-  it("handle successful user registration", () => {
+  it("handle successful user login", () => {
     wrapper.find("input#username").simulate("change", {
       target: { name: "username", value: "mark" }
     });
     wrapper.find("input#password").simulate("change", {
       target: { name: "password", value: "mark" }
     });
-    wrapper.find("input#email").simulate("change", {
-      target: { name: "email", value: "mark@gmail.com" }
-    });
     wrapper.find("form").simulate("submit");
   });
   it("should update password on submission", () => {
-    mapDispatchToProps(dispatch).signup();
+    mapDispatchToProps(dispatch).login();
     expect(dispatch.mock.calls.length).toBe(1);
   });
 });
-
