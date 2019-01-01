@@ -1,7 +1,8 @@
 import { POST_QUESTION } from "../actions/actionTypes";
+import error from "../../utils";
 
-
-const POSTQN_URL = "http://localhost:5000/api/v1/questions";
+const POSTQN_URL =
+  "https://stackoverflow-esther.herokuapp.com/api/v1/questions";
 const token = localStorage.getItem("token");
 export const postQnAction = data => {
   return dispatch => {
@@ -20,6 +21,7 @@ export const postQnAction = data => {
           window.location.replace("/questions");
         } else {
           dispatch({ type: POST_QUESTION, payload: res });
+          error(res.message)
         }
       })
       .catch(error => error);

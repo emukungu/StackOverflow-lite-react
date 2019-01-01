@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import App from "../../src/components/App";
 import SignupComponent from "../../src/components/signup";
 import LoginComponent from "../../src/components/login";
-import  { Header, HomeLink, HomeHeader, LoggedInHeader, LogoutLink } from "../../src/components/header";
+import  { Header, HomeLink, HomeHeader, LoggedInHeader, logoutLink } from "../../src/components/header";
 import Main from "../../src/components/main";
 import { SpecificQuestion } from "../../src/containers/specificQn";
 
@@ -47,7 +47,7 @@ describe("<App />", () => {
   });
 
   it("logout successful", () => {
-    LogoutLink()
+    logoutLink()
   });
   it("renders the component", () => {
     const question = { title: "worms", description: "lukewarm", qn_id: 2 };

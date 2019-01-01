@@ -16,12 +16,15 @@ describe(" sigup actions ", () => {
   });
 
   it("return a speific questions", () => {
-    fetchMock.get(`http://localhost:5000/api/v1/questions/${questionId}`,{
-      headers: {
-        "content-type": "application/json"
-      },
-      body: []
-    });
+    fetchMock.get(
+      `https://stackoverflow-esther.herokuapp.com/api/v1/questions/${questionId}`,
+      {
+        headers: {
+          "content-type": "application/json"
+        },
+        body: []
+      }
+    );
     const store = mockStore();
     const expectedAction = [{ type: SPECIFIC_QUESTION, payload: undefined}];
     return store

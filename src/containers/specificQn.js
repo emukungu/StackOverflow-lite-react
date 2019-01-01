@@ -6,8 +6,8 @@ import specificQuestionAction from "../actions/specificQuestion";
 export class SpecificQuestion extends Component {
   componentDidMount() {
     const { match, specificQn } = this.props;
-    // const { id } = match.params;
-    specificQn(match.params.id);
+    const { id } = match.params;
+    specificQn(id);
   }
   render() {
     const { question } = this.props;
