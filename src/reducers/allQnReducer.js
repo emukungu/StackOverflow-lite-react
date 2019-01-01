@@ -1,5 +1,9 @@
 import { initialState } from "./initialState";
-import { ALL_QUESTIONS, SPECIFIC_QUESTION } from "../actions/actionTypes";
+import {
+  ALL_QUESTIONS,
+  SPECIFIC_QUESTION,
+  POST_QUESTION
+} from "../actions/actionTypes";
 
 const allQnReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -9,6 +13,11 @@ const allQnReducer = (state = initialState, action) => {
   case SPECIFIC_QUESTION:
   return { ...state,
     question: action.payload };
+    case POST_QUESTION:
+    return {
+      ...state,
+      message: action.payload
+    };
   default:
     return state;
   }
