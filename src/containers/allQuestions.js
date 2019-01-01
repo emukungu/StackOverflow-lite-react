@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import { connect } from "react-redux";
 
 import allQuestionsAction from "../actions/allQuestions";
 
 export const QuestionLayout = props => {
-  const { title, username } = props.question;
+  const { title, username, qn_id } = props.question;
+  const { match } = props;
+
   return (
     <div className="question-layout">
       <div className="row">
         <div className=" col-xs-12 col-md-12 qn-title">
-          <NavLink to="/specificQuestion">
-            {title}
-          </NavLink>
+          <NavLink to={`${match.url}/${qn_id}`}>{title}</NavLink>
         </div>
       </div>
       <div className="row">
@@ -27,8 +27,7 @@ export class AllQuestions extends Component {
     this.props.allQns();
   }
   render() {
-    const { list } = this.props;
-    console.log(list);
+    const { list, match } = this.props;
     return (
       <div className="container">
         <div className="row centered page-header">
@@ -44,11 +43,7 @@ export class AllQuestions extends Component {
         <div className="row">
           <div className=" col-xs-12 col-md-12 centered">
             {list.map((item, index) => (
-              <QuestionLayout
-                key={index}
-                question={item}
-                // clickHandler={clickHandler(list)}
-              />
+              <QuestionLayout key={index} question={item} match={match} />
             ))}
           </div>
         </div>

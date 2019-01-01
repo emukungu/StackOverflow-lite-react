@@ -1,12 +1,12 @@
 import allQnReducer from "../../src/reducers/allQnReducer";
-import { ALL_QUESTIONS } from "../../src/actions/actionTypes";
+import { ALL_QUESTIONS, SPECIFIC_QUESTION } from "../../src/actions/actionTypes";
 import { initialState } from "../../src/reducers/initialState";
 describe("all questions reducer", () => {
   it("should return initial state", () => {
     expect(allQnReducer(undefined, {})).toEqual(initialState);
   });
 
-  it("receive all bookmarks", () => {
+  it("receive all questions", () => {
     expect(allQnReducer([], {
         type: ALL_QUESTIONS,
         payload: [
@@ -19,5 +19,14 @@ describe("all questions reducer", () => {
         { title: "now2", author: "luke" }
       ]
     });
+  });
+  it("receive a specific question", () => {
+    expect(allQnReducer([], {
+      type: SPECIFIC_QUESTION,
+      payload:  { title: "worms", description: "lukewarm", qn_id : 2 }
+
+    })).toEqual({
+      question: { title: "worms", description: "lukewarm", qn_id: 2 }}
+    );
   });
 });

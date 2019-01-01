@@ -8,6 +8,6 @@ const rootReducer = combineReducers({
   signupReducer,
   loginReducer,
   allQnReducer
-})
+});
 
 export default rootReducer;

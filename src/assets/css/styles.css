@@ -60,3 +60,7 @@
   text-align: right;
   margin-left: -20px;
 }
+.center-singleqn {
+  margin: auto;
+  width: 60%;
+}
