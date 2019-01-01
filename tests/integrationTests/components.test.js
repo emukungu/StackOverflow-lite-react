@@ -7,7 +7,7 @@ import SignupComponent from "../../src/components/signup";
 import LoginComponent from "../../src/components/login";
 import  { Header, HomeLink, HomeHeader, LoggedInHeader, LogoutLink } from "../../src/components/header";
 import Main from "../../src/components/main";
-
+import { SpecificQuestion } from "../../src/containers/specificQn";
 
 describe("<App />", () => {
   it("test App component", () => {
@@ -48,5 +48,16 @@ describe("<App />", () => {
 
   it("logout successful", () => {
     LogoutLink()
+  });
+  it("renders the component", () => {
+    const question = { title: "worms", description: "lukewarm", qn_id: 2 };
+    const component = shallow(
+      <SpecificQuestion
+        question={question}
+        specificQn={jest.fn()}
+        match={{ params: { id: 1 } }}
+      />
+    );
+    expect(component).toMatchSnapshot();
   });
 });

@@ -12,10 +12,8 @@ export const allQuestionsAction = () => {
       }
     })
       .then(response => {
-        console.log(response);
         return response.json()})
       .then(res => {
-        console.log(res)
         if (!res.message) {
           dispatch({ type: ALL_QUESTIONS, payload: res.Results });
         }
