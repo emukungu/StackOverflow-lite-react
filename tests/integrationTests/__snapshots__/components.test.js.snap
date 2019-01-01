@@ -533,6 +533,10 @@ ShallowWrapper {
         />,
         <Route
           component={[Function]}
+          path="/postQuestion"
+        />,
+        <Route
+          component={[Function]}
           exact={true}
           path="/questions"
         />,
@@ -576,6 +580,18 @@ ShallowWrapper {
         "props": Object {
           "component": [Function],
           "path": "/login",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "component": [Function],
+          "path": "/postQuestion",
         },
         "ref": null,
         "rendered": null,
@@ -631,6 +647,10 @@ ShallowWrapper {
           />,
           <Route
             component={[Function]}
+            path="/postQuestion"
+          />,
+          <Route
+            component={[Function]}
             exact={true}
             path="/questions"
           />,
@@ -674,6 +694,18 @@ ShallowWrapper {
           "props": Object {
             "component": [Function],
             "path": "/login",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/postQuestion",
           },
           "ref": null,
           "rendered": null,
