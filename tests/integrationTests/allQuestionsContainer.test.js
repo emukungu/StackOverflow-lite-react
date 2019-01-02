@@ -17,7 +17,7 @@ describe("<All questions />", () => {
     );
     expect(component).toMatchSnapshot();
   });
-  it("renders the cardlayout component", () => {
+  it("renders the layout component", () => {
     const questionDetails = { title: "now", author: "Lucas", qn_id:3}
     const component = shallow(
       <QuestionLayout question={questionDetails} match={jest.fn()} />

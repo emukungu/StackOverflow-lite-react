@@ -36,7 +36,7 @@ describe("allquestions list", () => {
     });
   });
 
-  it("fetching bookmarksfails", () => {
+  it("fetching questions fails", () => {
     fetch.mockReject(new Error());
     const store = mockStore();
 
@@ -55,3 +55,5 @@ describe("test mappings to Props", () => {
     expect(dispatch.mock.calls.length).toBe(1);
   });
 });
+
+

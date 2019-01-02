@@ -7,9 +7,10 @@ import Login from "../containers/login";
 import AllQuestions from "../containers/allQuestions";
 import SpecificQuestion from "../containers/specificQn";
 import PostQnContainer  from "../containers/postQuestion";
+import Home  from "../components/home";
 const Main = () => (
   <Switch>
-    <Route exact path="/" component={AllQuestions} />
+    <Route exact path="/" component={Home} />
     <Route path="/signup" component={Signup} />
     <Route path="/login" component={Login} />
     <Route path="/postQuestion" component={PostQnContainer} />

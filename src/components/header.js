@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-export const logoutLink = (event) => {
+export const logoutLink = event => {
   localStorage.removeItem("token");
 };
-export const HomeLink = () => {
-  return (
-    <NavLink to="/questions" className="home">
-      Home
-    </NavLink>
-  );
-};
+
 export const HomeHeader = () => {
   return (
-    <nav className=" navbar">
-      <HomeLink />
+    <nav className=" row navbar">
+      <NavLink to="/" className="home">
+        StackOverflow-lite
+      </NavLink>
       <NavLink to={"/login"} className="signupLinks login-link">
         Login
       </NavLink>
@@ -28,12 +24,11 @@ export const HomeHeader = () => {
 
 export const LoggedInHeader = () => {
   return (
-    <nav className=" navbar">
-      <HomeLink />
-      <NavLink
-        to="/questions"
-        onClick={logoutLink}
-        className="signupLinks login-link">
+    <nav className=" row navbar">
+      <NavLink to="/questions" className="home">
+        StackOverflow-lite
+      </NavLink>
+      <NavLink to="/" onClick={logoutLink} className="signupLinks login-link">
         Logout
       </NavLink>
     </nav>

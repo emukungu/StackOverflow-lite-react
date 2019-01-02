@@ -10,7 +10,7 @@ describe("user registration", () => {
   beforeEach(() => {
     wrapper = mount(<Signup signup={change} />);
   });
-  it("should call the mock change function", () => {
+  it("should call the change function", () => {
     wrapper.find("form").simulate("submit", {
       preventDefault() {}
     });
@@ -28,7 +28,7 @@ describe("user registration", () => {
     });
     wrapper.find("form").simulate("submit");
   });
-  it("should update password on submission", () => {
+  it("should test mapDispatchToProps", () => {
     mapDispatchToProps(dispatch).signup();
     expect(dispatch.mock.calls.length).toBe(1);
   });

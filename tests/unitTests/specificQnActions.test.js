@@ -10,7 +10,7 @@ const mockStore = configureStore(middlewares);
 
 const questionId = "1"
 
-describe(" sigup actions ", () => {
+describe(" specific question ", () => {
   afterEach(() => {
     fetchMock.restore();
   });

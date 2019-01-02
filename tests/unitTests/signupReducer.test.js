@@ -5,7 +5,7 @@ describe("signup reducer", () => {
     expect(signupReducer(undefined, {})).toEqual("");
   });
 
-  it("User successfully signups", () => {
+  it("User successfully signs up", () => {
     expect(signupReducer([], {
         type: SIGN_UP,
         payload: "successful"

@@ -5,7 +5,7 @@ describe("login reducer", () => {
     expect(loginReducer(undefined, {})).toEqual("");
   });
 
-  it("User successfully logins", () => {
+  it("User successfully logs in", () => {
     expect(loginReducer([], {
       type: LOGIN,
       payload: "successful"

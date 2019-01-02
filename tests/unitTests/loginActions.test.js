@@ -16,12 +16,12 @@ const data = {
   password: "password"
 };
 
-describe(" sigup actions ", () => {
+describe(" login actions ", () => {
   afterEach(() => {
     fetchMock.restore();
   });
 
-  it("registers a user by call the SignUpAction", () => {
+  it("logins in a user", () => {
     fetchMock.post(LOGIN_URL, data);
     const store = mockStore();
     const expectedAction = [{ type: LOGIN, payload: data }];
@@ -30,7 +30,7 @@ describe(" sigup actions ", () => {
       .then(() => expect(store.getActions()).toEqual(expectedAction));
   });
 
-  it("registration fails", () => {
+  it("login fails", () => {
     fetch.mockReject(new Error());
     const store = mockStore();
 
@@ -38,7 +38,7 @@ describe(" sigup actions ", () => {
     expect(store.getActions()).toEqual([]);
   });
 
-  it("registration successful", () => {
+  it("login successful", () => {
     const res = {token:"hello"}
     successfulLogin(res)
   });

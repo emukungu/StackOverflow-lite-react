@@ -7,7 +7,7 @@ import {
 } from "../../src/containers/specificQn";
 import allQnReducer from "../../src/reducers/allQnReducer";
 
-describe("user login", () => {
+describe("test the return of a specific question", () => {
   const dispatch = jest.fn();
 
   it("should test mapStateToProps", () => {

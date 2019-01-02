@@ -24,7 +24,7 @@ describe(" sigup actions ", () => {
     fetchMock.restore();
   });
 
-  it("registers a user by call the SignUpAction", () => {
+  it("registers a user", () => {
     fetchMock.post(SIGNUP_URL, data);
     const store = mockStore();
     const expectedAction = [{ type: SIGN_UP, payload: data }];
