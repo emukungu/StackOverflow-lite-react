@@ -19,12 +19,15 @@ describe("allquestions list", () => {
     fetchMock.restore();
   });
   it("test successfully fetch all questions", () => {
-    fetchMock.get("http://localhost:5000/api/v1/questions", {
-      headers: {
-        "content-type": "application/json"
-      },
-      body: []
-    });
+    fetchMock.get(
+      "https://stackoverflow-esther.herokuapp.com/api/v1/questions",
+      {
+        headers: {
+          "content-type": "application/json"
+        },
+        body: []
+      }
+    );
 
     return store.dispatch(allQuestionsAction()).then(() => {
       expect(store.getActions()).toEqual([

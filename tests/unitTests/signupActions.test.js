@@ -9,7 +9,8 @@ import { SIGN_UP } from "../../src/actions/actionTypes";
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
-const SIGNUP_URL = "http://localhost:5000/api/v1/auth/signup";
+const SIGNUP_URL =
+  "https://stackoverflow-esther.herokuapp.com/api/v1/auth/signup";
 
 const data = {
     username: "mark",

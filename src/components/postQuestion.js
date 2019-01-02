@@ -5,8 +5,8 @@ export const PostQn = props => {
   const { handleSubmit, handleChange } = props;
   return <div className="container">
       <div className="row">
-        <div className=" col-xs-12 col-md-6 center-login">
-          <h2>ADD A QUESTION</h2>
+        <div className=" col-xs-12 col-md-6 center-login ">
+        <p className="qnHeader">ADD A QUESTION</p>
           <form onSubmit={handleSubmit} className="form-boundary">
             <Input htmlFor={"title"}
                 innerHTML={"Title"}

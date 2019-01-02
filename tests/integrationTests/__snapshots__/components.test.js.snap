@@ -329,7 +329,7 @@ ShallowWrapper {
       "aria-current": "page",
       "children": "Home",
       "className": "home",
-      "to": "/home",
+      "to": "/questions",
     },
     "ref": null,
     "rendered": "Home",
@@ -345,7 +345,7 @@ ShallowWrapper {
         "aria-current": "page",
         "children": "Home",
         "className": "home",
-        "to": "/home",
+        "to": "/questions",
       },
       "ref": null,
       "rendered": "Home",
@@ -395,7 +395,8 @@ ShallowWrapper {
           activeClassName="active"
           aria-current="page"
           className="signupLinks login-link"
-          to="/home"
+          onClick={[Function]}
+          to="/questions"
         >
           Logout
         </NavLink>,
@@ -422,7 +423,8 @@ ShallowWrapper {
           "aria-current": "page",
           "children": "Logout",
           "className": "signupLinks login-link",
-          "to": "/home",
+          "onClick": [Function],
+          "to": "/questions",
         },
         "ref": null,
         "rendered": "Logout",
@@ -443,7 +445,8 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="signupLinks login-link"
-            to="/home"
+            onClick={[Function]}
+            to="/questions"
           >
             Logout
           </NavLink>,
@@ -470,7 +473,8 @@ ShallowWrapper {
             "aria-current": "page",
             "children": "Logout",
             "className": "signupLinks login-link",
-            "to": "/home",
+            "onClick": [Function],
+            "to": "/questions",
           },
           "ref": null,
           "rendered": "Logout",

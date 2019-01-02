@@ -7,8 +7,7 @@ import { POST_QUESTION } from "../../src/actions/actionTypes";
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
-const POST_URL =
-  "http://localhost:5000/api/v1/questions";
+const POST_URL = "https://stackoverflow-esther.herokuapp.com/api/v1/questions";
 
 const data = {
   title: "Today",

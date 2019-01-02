@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
 import { signupReducer } from "./signupReducer";
-import loginReducer from "./loginReducer";
+import { loginReducer } from "./loginReducer";
 import allQnReducer from "./allQnReducer";
 
 const rootReducer = combineReducers({

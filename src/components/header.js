@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-export const LogoutLink = () => {
+export const logoutLink = (event) => {
   localStorage.removeItem("token");
 };
 export const HomeLink = () => {
   return (
-    <NavLink to="/home" className="home">
+    <NavLink to="/questions" className="home">
       Home
     </NavLink>
   );
@@ -30,7 +30,10 @@ export const LoggedInHeader = () => {
   return (
     <nav className=" navbar">
       <HomeLink />
-      <NavLink to="/home" className="signupLinks login-link">
+      <NavLink
+        to="/questions"
+        onClick={logoutLink}
+        className="signupLinks login-link">
         Logout
       </NavLink>
     </nav>
