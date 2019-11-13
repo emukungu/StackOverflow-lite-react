@@ -1,0 +1,82 @@
+body{
+  /* background-color: turquoise; */
+  background-image: url("../../images/joanna-kosinska-433799-unsplash.jpg");
+
+}
+
+.center-login {
+  width: 40%;
+  margin-left: 30%;
+  vertical-align: center;
+}
+.center-signup {
+  width: 40%;
+}
+.navbar {
+  background-color: turquoise;
+  height: 20px;
+  margin-bottom: 70px;
+  padding-top: 10px;
+}
+.signupLinks {
+  color: white;
+  text-decoration-line: none;
+  font-size: 20px;
+  float: right;
+  margin-right: 20px;
+}
+.login-link {
+  margin-right: 50px;
+}
+.home {
+  color: white;
+  text-decoration-line: none;
+  font-size: 20px;
+  margin-left: 10%;
+}
+.qnLink {
+  font-size: 20px;
+  float: right;
+  margin-right: 100px;
+}
+.centered {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.qnHeader {
+  font-size: 25px;
+  font-weight: bold;
+}
+.home-page{
+  margin-top: 10%;
+  text-align: center;
+  line-height: 90px;
+  font-style: oblique;
+
+}
+.question-layout {
+  border: 2px solid lightgrey;
+  line-height: 30px;
+  margin: 30px;
+  width: 60%;
+}
+.page-header{
+  border-bottom: 2px solid lightgrey;
+}
+.qn-title {
+  text-align: center;
+}
+.qn-author {
+  text-align: right;
+  margin-left: -20px;
+}
+.center-singleqn {
+  margin: auto;
+  width: 60%;
+}
+.post-qn {
+  margin-bottom: 20px;
+}
+.swal-wide{
+    font-size:20px !important;
+}
